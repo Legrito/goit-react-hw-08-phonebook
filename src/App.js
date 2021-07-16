@@ -1,21 +1,26 @@
 import './App.css';
-import ContactForm from './components/Form/Form'
-import ContactList from './components/ContactsList/ContactList';
-import Filter from './components/Filter/Filter';
+import { Route, Switch } from 'react-router-dom';
+import {HomeView} from './views/HomeView';
+import { RegisterView } from './views/RegisterView';
+import { LoginView } from './views/LoginView';
+import { ContactsView } from './views/ContactsView';
+import { AppBar } from './components/AppBar';
+import { Container } from './components/Container';
+
 
 
 const App = () => {
     return (
-      <div className="App">
-      <h1 className="App__title"> Phonebooks </h1>
-      <ContactForm />
-      <div className="App__contacts__container">
-      <h2 className="App__contacts__title"> Contacts </h2>
-      <h3 className="App__filter__title"> Find contacts by name </h3>
-      <Filter />
-      <ContactList />
-      </div>
-    </div>
+      <Container>
+      <AppBar isAuth="false"/>
+      
+      <Switch>
+        <Route exact path='/' component={HomeView} />
+        <Route path='/register' component={RegisterView} />
+        <Route path='/login' component={LoginView} />
+        <Route path='/contacts' component={ContactsView} />
+      </Switch>
+      </Container>
     )
   }
 
