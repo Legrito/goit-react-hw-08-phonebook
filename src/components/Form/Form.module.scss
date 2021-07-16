@@ -1,0 +1,40 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(211, 255, 255, 0.726);
+
+    label {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    input {
+        width: 370px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 20px;
+        width: 370px;
+        height: auto;
+        font-size: 28px;
+        font-weight: 600;
+        border: none;
+        background-color: rgba(0, 148, 148, 0.726);
+
+        &:hover {
+            background-color: rgba(106, 173, 173, 0.726);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}
