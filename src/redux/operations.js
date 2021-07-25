@@ -1,7 +1,6 @@
 import axios from 'axios';
 import * as actions from './actions';
 
-axios.defaults.baseURL = 'http://localhost:4040';
 
 const getContacts = () => dispatch => {
 
@@ -9,7 +8,7 @@ const getContacts = () => dispatch => {
 
     axios.get('/contacts')
     .then(({data}) => dispatch(actions.getItemSuccess(data)))
-    .catch(error => dispatch(actions.getItemError(error)));
+    .catch(error => dispatch(actions.getItemError(error.message)));
 }
 
 const addContact = ({name, number}) => dispatch => {
@@ -22,16 +21,15 @@ const addContact = ({name, number}) => dispatch => {
 
     axios.post('/contacts', item)
     .then(({data}) => dispatch(actions.addItemSuccess(data)))
-    .catch(error => dispatch(actions.addItemError(error)));
+    .catch(error => dispatch(actions.addItemError(error.message)));
 }
 
 const deleteContact = id => dispatch => {
     dispatch(actions.deleteItemRequest());
-    console.log(id, 'iiiiiiiits idddddddddd');
 
     axios.delete(`/contacts/${id}`)
     .then(() => dispatch(actions.deleteItemSuccess(id)))
-    .catch(error => dispatch(actions.deleteItemError(error)));
+    .catch(error => dispatch(actions.deleteItemError(error.message)));
 }
 
 
