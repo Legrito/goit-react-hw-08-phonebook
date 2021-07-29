@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import { ContactItem } from './ContactItem';
-import { useEffect, Component } from 'react';
+import { useEffect } from 'react';
 import styles from './ContactList.module.css';
 import operations from './../../redux/operations';
-import { getFilter, getLoading, getFilteredContacts } from '../../redux/selectors';
+import { getLoading, getFilteredContacts } from '../../redux/selectors';
 
 const ContactList = ({ contacts, onClick, getContacts, loading}) => {
   useEffect(() => getContacts(),

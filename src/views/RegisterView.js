@@ -1,6 +1,6 @@
 import {RegisterForm} from "../components/RegisterForm/";
 
-export const RegisterView = () => {
+const RegisterView = () => {
     return (
         <>
     <h1> Register </h1>
@@ -8,3 +8,5 @@ export const RegisterView = () => {
     </>
     )
 }
+
+export default RegisterView;

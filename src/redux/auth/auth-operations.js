@@ -59,19 +59,21 @@ const getCurrentUser = () => async (dispatch, getState) => {
         return;
     }
 
-    token.set();
+    token.set(persistedToken);
     dispatch(authActions.getCurrentUserRequestRequest());
 
     try {
-
         const result = await axios.get('users/current');
+        dispatch(authActions.getCurrentUserRequestSuccess(result.data));
     } catch(error) {
 
+        dispatch(authActions.getCurrentUserRequestError(error.message))
     }
 }
 
 export default {
     register,
     logIn,
-    logout
+    logout,
+    getCurrentUser,
 }

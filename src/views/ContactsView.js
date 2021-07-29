@@ -1,7 +1,7 @@
 import ContactForm from '../components/Form/Form'
 import ContactList from '../components/ContactsList/ContactList';
 import Filter from '../components/Filter/Filter';
-export const ContactsView = () => {
+const ContactsView = () => {
     return (
         <div className="App">
       <h1 className="App__title"> Phonebooks </h1>
@@ -14,3 +14,5 @@ export const ContactsView = () => {
       </div>
     </div>)
 }
+
+export default ContactsView;

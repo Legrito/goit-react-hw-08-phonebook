@@ -1,6 +1,6 @@
 import { LoginForm } from '../components/LoginForm';
 
-export const LoginView = () => {
+const LoginView = () => {
     return (
         <>
         <h1> Login </h1>
@@ -8,3 +8,5 @@ export const LoginView = () => {
         </>
     )
 }
+
+export default LoginView;
