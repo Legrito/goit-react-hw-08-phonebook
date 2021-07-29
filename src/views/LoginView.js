@@ -2,10 +2,10 @@ import { LoginForm } from '../components/LoginForm';
 
 const LoginView = () => {
     return (
-        <>
-        <h1> Login </h1>
+        <div className="view__container">
+        <h1 className="view__title" > Please login </h1>
         <LoginForm />
-        </>
+        </div>
     )
 }
 

@@ -1,4 +1,6 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/common.css';
 import { Suspense, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
 //import {HomeView} from './views/HomeView';

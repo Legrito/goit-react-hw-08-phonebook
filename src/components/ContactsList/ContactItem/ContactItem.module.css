@@ -18,11 +18,11 @@
   height: 100%;
   width: 100px;
   border: none;
-  background-color: rgba(0, 148, 148, 0.726);
+  background-color: #dc3546;
 }
 
 .item button:hover {
-  background-color: rgba(106, 173, 173, 0.726);
+  background-color: #30e08eb9;
 }
 
 .item button:active {

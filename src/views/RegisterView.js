@@ -2,10 +2,10 @@ import {RegisterForm} from "../components/RegisterForm/";
 
 const RegisterView = () => {
     return (
-        <>
-    <h1> Register </h1>
+        <div className="view__container">
+    <h1 className="view__title"> Registration </h1>
     <RegisterForm />
-    </>
+    </div>
     )
 }
 

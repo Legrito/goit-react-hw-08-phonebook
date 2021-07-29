@@ -12,14 +12,14 @@ ul {
   padding: 20px 0;
   text-align: center;
   width: 500px;
-  background: url('./data/free-iphone-6-pattern-4-vector.jpg');
+  background: url("./data/free-iphone-6-pattern-4-vector.jpg");
 }
 
 .App__title {
   margin-bottom: 10px;
   padding: 20px;
   font-size: 48px;
-  background-color: rgba(211, 255, 255, 0.726);
+  background-color: #20c997b9;
 }
 
 .App__contacts__container {
@@ -64,6 +64,11 @@ ul {
 
 .App-link {
   color: #61dafb;
+}
+
+.nav-right {
+  display: flex;
+  margin-left: auto;
 }
 
 @keyframes App-logo-spin {

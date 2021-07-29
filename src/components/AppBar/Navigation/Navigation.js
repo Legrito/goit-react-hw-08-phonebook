@@ -5,8 +5,8 @@ import { authSelectors } from "../../../redux/auth";
 const Navigation = ({isAuth}) => {
     return (
         <>
-        <NavLink to="/" activeClassName="">Home</NavLink>
-        {!!isAuth && <NavLink to="/contacts" activeClassName="">Contacts</NavLink>}
+        <NavLink exact to="/" className="NavLink" activeClassName="NavLink--active">Home</NavLink>
+        {!!isAuth && <NavLink to="/contacts" className="NavLink" activeClassName="NavLink--active">Contacts</NavLink>}
         </>
     )
 }

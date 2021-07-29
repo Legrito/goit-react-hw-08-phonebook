@@ -13,7 +13,7 @@
   height: 300px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgba(211, 255, 255, 0.726);
+  background-color: #20c997b9;
 }
 
 .form label {
@@ -35,11 +35,11 @@
   font-size: 28px;
   font-weight: 600;
   border: none;
-  background-color: rgba(0, 148, 148, 0.726);
+  background-color: #20c996;
 }
 
 .form button:hover {
-  background-color: rgba(106, 173, 173, 0.726);
+  background-color: #30e08eb9;
 }
 
 .form button:active {

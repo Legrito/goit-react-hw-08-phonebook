@@ -1,0 +1,97 @@
+.NavLink {
+  color: #198754;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.NavLink:hover {
+  color: #20c997;
+}
+
+.NavLink--active {
+  color: #dc3545;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.view__container {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.view__title {
+  margin: 0 auto 20px;
+  padding: 0 auto;
+  color: #dc3545;
+  text-align: center;
+  max-width: 500px;
+}
+
+.cta {
+  position: relative;
+  padding: 40px;
+  width: 260px;
+  right: 0;
+  top: 80px;
+  left: -30px;
+  bottom: 0;
+  text-align: left;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.cta .description {
+  font-size: 22px;
+  line-height: 2em;
+  font-weight: 600;
+}
+
+.main__image {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  left: 0;
+  bottom: 0;
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.user__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-left: auto;
+}
+
+.user__menu .greet {
+  margin-right: 10px;
+}
+
+.ava__thumb {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+.ava__thumb .user__avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.App__wrapper {
+  width: 500px;
+  border-radius: 60px;
+  margin: 40px auto 0;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 5px 8px 6px rgba(34, 60, 80, 0.25);
+          box-shadow: 0px 5px 8px 6px rgba(34, 60, 80, 0.25);
+}
+/*# sourceMappingURL=common.css.map */
